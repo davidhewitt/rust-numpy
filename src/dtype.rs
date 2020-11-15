@@ -54,7 +54,7 @@ impl PyArrayDescr {
     /// pyo3::Python::with_gil(|py| {
     ///    let array = numpy::PyArray::from_vec(py, vec![0.0, 1.0, 2.0f64]);
     ///    let dtype = array.dtype();
-    ///    assert_eq!(dtype.get_type().name().to_string(), "numpy.float64");
+    ///    assert_eq!(dtype.get_type().name().unwrap().to_string(), "float64");
     /// });
     /// ```
     pub fn get_type(&self) -> &PyType {

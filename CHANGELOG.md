@@ -1,5 +1,8 @@
 # Changelog
 
+- Unreleased
+  - Remove unused `python3` feature
+
 - v0.12.1
   - Fix compile error in Rust 1.39
 
